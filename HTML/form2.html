@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+</head>
+
+<body>
+    <center>
+        <h2>Enquiry</h2>
+        <form>
+            <fieldset>
+            Name: <input type="text" name="name" placeholder=" enter your name" /><br /><br />
+            Address: <textarea name="address" placeholder="enter your address"></textarea>
+            <br />
+            <br />
+            Gender:
+            <input type="radio" value="M" name="gender" /> Male
+            <input type="radio" value="F" name="gender" /> Female
+            <br />
+            <br />
+            Country:
+            <select name="Country">
+                <option value="none">select any option</option>
+                <option value="india">India</option>
+                <option value="uae">UAE</option>
+            </select>
+            <br />
+            <br />
+            Blood Group:
+            <select name="Blood Group">
+                <option value="none">select any option</option>
+                <optgroup label="+">
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                </optgroup>
+                <optgroup label="-">
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                </optgroup>
+                <optgroup label="O">
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </optgroup>
+            </select>
+            <br />
+            <br />
+            Hobbies:
+            <input type="checkbox" name="Hobbies[]" value="Dance" />Dance
+            <input type="checkbox" name="Hobbies[]" value="Cricket"  checked=""/>Cricket
+            <input type="checkbox" name="Hobbies[]" value="Football" />Football
+            <br />
+            <br />
+            Your Image:
+            <input type="file" name="image" />
+            <br />
+            <br />
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+            </fieldset>
+        </form>
+    </center>
+    
+</body>
+
+</html>

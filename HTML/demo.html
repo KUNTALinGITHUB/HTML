@@ -1,0 +1,25 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeFile="MemberSynopsis.aspx.cs"
+    Inherits="MemberSynopsis" %>
+
+    <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    </asp:Content>
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+        <div class="header">
+            <strong><span>Member Synopsis</span></strong>
+        </div>
+        <div class="card mt-4">
+            <div class="row">
+                <div class="card">
+                    <div class="col-sm-5">
+                        <label class="col-form-label"> <strong>Member ID</strong></label>
+                    </div>
+                    <div class="col-sm-7">
+                        <%-- <input type="text" class=" form-control form-txt-default"
+                            placeholder=".form-txt-default">--%>
+
+                            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control form-txt-default" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </asp:Content>
